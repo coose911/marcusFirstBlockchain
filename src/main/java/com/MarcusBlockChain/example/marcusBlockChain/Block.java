@@ -7,11 +7,11 @@ import java.util.List;
 
 public class Block {
 
-    private int previousHash;
+    private String previousHash;
     private List<Transaction> transaction;
     private String hash;
 
-    public Block(int previousHash, List<Transaction> transaction) throws NoSuchAlgorithmException {
+    public Block(String previousHash, List<Transaction> transaction) throws NoSuchAlgorithmException {
         this.previousHash = previousHash;
         this.transaction = transaction;
         this.hash = generateHash();
@@ -40,12 +40,12 @@ public class Block {
         return hexString.toString();
     }
 
-    public int getPreviousHash() {
+    public String getPreviousHash() {
         return previousHash;
     }
 
 //    set previous hash need work so it stores previous hash
-    public void setPreviousHash(int previousHash) {
+    public void setPreviousHash(String previousHash) {
         this.previousHash = previousHash;
     }
 

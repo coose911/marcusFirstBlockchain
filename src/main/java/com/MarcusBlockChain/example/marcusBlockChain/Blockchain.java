@@ -11,7 +11,11 @@ public class Blockchain {
 
         Transaction transaction1 = new Transaction("Marcus", "Jenyth", 1000L);
         Transaction transaction2 = new Transaction("Jenyth", "Marcus", 1000L);
-        Block block = new Block(0, Arrays.asList(transaction1, transaction2));
+        Transaction transaction3 = new Transaction("Jenyth", "Marcus", 1000L);
+        Block block = new Block("0", Arrays.asList(transaction1, transaction2));
+        block.getHash();
+        Block block1 = new Block(block.getHash(), Arrays.asList(transaction3));
+        System.out.println(block.getHash());
 
 
     }
