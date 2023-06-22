@@ -16,6 +16,9 @@ public class Blockchain {
         block.getHash();
         Block block1 = new Block(block.getHash(), Arrays.asList(transaction3));
         System.out.println(block.getHash());
+        System.out.println(block1.getHash());
+        System.out.println(block1.getPreviousHash());
+
 
 
     }
