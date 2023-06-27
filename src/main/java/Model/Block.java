@@ -1,15 +1,32 @@
-package com.MarcusBlockChain.example.marcusBlockChain;
+package Model;
+import jakarta.persistence.*;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
+
+@Entity
+@Table(name = "blocks")
+
 public class Block {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
+
+    @Column(name = "previous_hash")
     private String previousHash;
+
+    @Column(name = "transaction")
     private List<Transaction> transaction;
+
+    @Column(name = "hash")
     private String hash;
+
+    public Block(){};
 
     public Block(String previousHash, List<Transaction> transaction) throws NoSuchAlgorithmException {
         this.previousHash = previousHash;

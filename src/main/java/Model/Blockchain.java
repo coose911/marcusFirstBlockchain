@@ -1,7 +1,9 @@
-package com.MarcusBlockChain.example.marcusBlockChain;
+package Model;
+
+import Model.Block;
+import Model.Transaction;
 
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Blockchain {

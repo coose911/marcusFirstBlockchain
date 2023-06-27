@@ -1,13 +1,31 @@
-package com.MarcusBlockChain.example.marcusBlockChain;
+package Model;
+import jakarta.persistence.*;
 
 import java.util.Objects;
 
+@Entity
+@Table(name = "transactions")
+
 public class Transaction {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
+
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "recipient")
     private String recipient;
+
+    @Column(name = "amount")
     private Long amount;
+
+    @Column(name = "hash")
     private int hash;
+
+    public Transaction(){};
 
     public Transaction(String name, String recipient, Long amount) {
         this.name = name;
