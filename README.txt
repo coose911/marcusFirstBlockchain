@@ -9,7 +9,7 @@ Set up Back End
 -Set up new packages for database and connection
  -Models
  -Controllers
- -Repositories 
+ -Repositories
 
 Set up Front End (React App)
 Install Node.js and npm: Before you start, make sure you have Node.js and npm installed on your system. If not, download and install Node.js from the official website (npm is included as a part of Node.js).
