@@ -24,8 +24,28 @@ Create a new React app: Use the following command to create a new React applicat
 npx create-react-app my-app
 The npx command will run create-react-app without requiring you to install it globally. It will create a new directory with the name you specified (my-app in this case), and set up a new React application in that directory.
 
-Start the development server: Once the installation is complete, navigate into your new project's directory and start the development server:
+Start the development server: Once the installation is complete, navigate into  project's directory and start the development server:
 
 cd my-app
 npm start
 This will start the development server, and you can open your new React application by going to http://localhost:3000 in your web browser.
+
+
+-------APP IS SET UP --------
+
+Setup a database (i used postico) and called it blockchain
+
+Copy the following into application.properties to connect to the PostgreSQL database.
+
+------------------------------
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/blockchain
+spring.datasource.username=marcusthomson
+spring.datasource.password=
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQL9Dialect
+spring.jpa.properties.hibernate.enable_lazy_load_no_trans=true
+
+-----------------------------
+
+run the following command (./mvnw spring-boot:run) in the terminal with the directory that has pom.xml in it
