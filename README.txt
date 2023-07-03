@@ -31,7 +31,7 @@ npm start
 This will start the development server, and you can open your new React application by going to http://localhost:3000 in your web browser.
 
 
--------APP IS SET UP --------
+<<<<<<<<<<<<<<<APP IS SET UP >>>>>>>>>>>>>>>
 
 Setup a database (i used postico) and called it blockchain
 
@@ -50,3 +50,5 @@ spring.jpa.properties.hibernate.enable_lazy_load_no_trans=true
 -----------------------------
 
 run the following command (./mvnw spring-boot:run) in the terminal with the directory that has pom.xml in it
+
+<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>
