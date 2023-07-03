@@ -36,11 +36,12 @@ This will start the development server, and you can open your new React applicat
 Setup a database (i used postico) and called it blockchain
 
 Copy the following into application.properties to connect to the PostgreSQL database.
+Remember to replace *your username here* with your own username
 
 ------------------------------
 
 spring.datasource.url=jdbc:postgresql://localhost:5432/blockchain
-spring.datasource.username=marcusthomson
+spring.datasource.username=*your username here*
 spring.datasource.password=
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.database-platform=org.hibernate.dialect.PostgreSQL9Dialect
