@@ -1,5 +1,6 @@
 package com.MarcusBlockChain.example.marcusBlockChain.Model;
 import jakarta.persistence.*;
+import org.jetbrains.annotations.NotNull;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -34,7 +35,7 @@ public class Block {
         this.hash = generateHash();
     }
 
-    private String generateHash() throws NoSuchAlgorithmException {
+    private @NotNull String generateHash() throws NoSuchAlgorithmException {
         MessageDigest md = MessageDigest.getInstance("SHA-256");
 
         // Creating a simple string from transactions
@@ -76,10 +77,6 @@ public class Block {
 
     public String getHash() {
         return hash;
-    }
-
-    public void setHash(String hash) {
-        this.hash = hash;
     }
 
     public Long getId() {

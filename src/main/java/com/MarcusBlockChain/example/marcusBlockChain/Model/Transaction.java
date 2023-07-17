@@ -27,7 +27,7 @@ public class Transaction {
     @JoinColumn(name="block_id", nullable=false)
     private Block block;
 
-    public Transaction(){};
+    public Transaction(){}
 
     public Transaction(String name, String recipient, Long amount) {
         this.name = name;
