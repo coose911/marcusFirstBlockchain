@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "transactions")
+@Table(name="transactions")
 
 public class Transaction {
 
@@ -24,6 +24,10 @@ public class Transaction {
 
     @Column(name = "hash")
     private int hash;
+
+    @ManyToOne
+    @JoinColumn(name="block_id", nullable=false)
+    private Block block;
 
     public Transaction(){};
 
@@ -64,6 +68,19 @@ public class Transaction {
         this.id = id;
     }
 
+    public int getHash() {
+        return hash;
+    }
 
+    public void setHash(int hash) {
+        this.hash = hash;
+    }
 
+    public Block getBlock() {
+        return block;
+    }
+
+    public void setBlock(Block block) {
+        this.block = block;
+    }
 }

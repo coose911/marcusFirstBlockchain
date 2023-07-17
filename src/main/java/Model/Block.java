@@ -20,11 +20,11 @@ public class Block {
     @Column(name = "previous_hash")
     private String previousHash;
 
-    @Column(name = "transaction")
-    private List<Transaction> transaction;
-
     @Column(name = "hash")
     private String hash;
+
+    @OneToMany(mappedBy="block", cascade = CascadeType.ALL)
+    private List<Transaction> transaction;
 
     public Block(){};
 
@@ -80,6 +80,13 @@ public class Block {
 
     public void setHash(String hash) {
         this.hash = hash;
+    }
+
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
     }
 }
 // need to find a way of each block storing previous blocks hash

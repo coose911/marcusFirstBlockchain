@@ -33,7 +33,7 @@ This will start the development server, and you can open your new React applicat
 
 <<<<<<<<<<<<<<<APP IS SET UP >>>>>>>>>>>>>>>
 
-Setup a database (i used postico) and called it blockchain
+Set up a database (i used postico) and called it blockchain
 
 Copy the following into application.properties to connect to the PostgreSQL database.
 Remember to replace *your username here* with your own username
