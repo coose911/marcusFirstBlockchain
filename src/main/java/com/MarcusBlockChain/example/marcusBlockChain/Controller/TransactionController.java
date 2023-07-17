@@ -1,9 +1,9 @@
-package Controller;
+package com.MarcusBlockChain.example.marcusBlockChain.Controller;
 
 
 
-import Model.Transaction;
-import Repositories.TransactionRepository;
+import com.MarcusBlockChain.example.marcusBlockChain.Model.Transaction;
+import com.MarcusBlockChain.example.marcusBlockChain.Repositories.TransactionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

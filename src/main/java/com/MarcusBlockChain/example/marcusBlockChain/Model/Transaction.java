@@ -1,7 +1,5 @@
-package Model;
+package com.MarcusBlockChain.example.marcusBlockChain.Model;
 import jakarta.persistence.*;
-
-import java.util.Objects;
 
 @Entity
 @Table(name="transactions")

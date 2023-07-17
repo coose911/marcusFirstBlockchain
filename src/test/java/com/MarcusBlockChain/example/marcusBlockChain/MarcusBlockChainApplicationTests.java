@@ -1,9 +1,9 @@
 package com.MarcusBlockChain.example.marcusBlockChain;
 
-import Model.Block;
-import Model.Transaction;
-import Repositories.BlockRepository;
-import Repositories.TransactionRepository;
+import com.MarcusBlockChain.example.marcusBlockChain.Model.Block;
+import com.MarcusBlockChain.example.marcusBlockChain.Model.Transaction;
+import com.MarcusBlockChain.example.marcusBlockChain.Repositories.BlockRepository;
+import com.MarcusBlockChain.example.marcusBlockChain.Repositories.TransactionRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

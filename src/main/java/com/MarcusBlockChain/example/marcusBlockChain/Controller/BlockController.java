@@ -1,8 +1,8 @@
-package Controller;
+package com.MarcusBlockChain.example.marcusBlockChain.Controller;
 
 
-import Model.Block;
-import Repositories.BlockRepository;
+import com.MarcusBlockChain.example.marcusBlockChain.Model.Block;
+import com.MarcusBlockChain.example.marcusBlockChain.Repositories.BlockRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package Model;
+package com.MarcusBlockChain.example.marcusBlockChain.Model;
 import jakarta.persistence.*;
 
 import java.nio.charset.StandardCharsets;
