@@ -31,10 +31,11 @@ class MarcusBlockChainApplicationTests {
 		Transaction transaction3 = new Transaction("Jenyth", "Marcus", 1000L);
 		Block block1 = new Block("0", Arrays.asList(transaction1, transaction2));
 		Block block2 = new Block(block1.getHash(), Arrays.asList(transaction3));
-		transactionRepository.save(transaction1);
 		blockRepository.save(block1);
 		blockRepository.save(block2);
-
+		transactionRepository.save(transaction1);
+		transactionRepository.save(transaction2);
+		transactionRepository.save(transaction3);
 
 
 		// Add any assertions or test logic here
